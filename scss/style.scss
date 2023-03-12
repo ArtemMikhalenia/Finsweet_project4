@@ -222,11 +222,6 @@
 /*</SECOND-CONTAINER>---------------------------------------------------*/
 /*<CONTAINER-PROJECTS>---------------------------------------------------*/
 
-
-/* .project-info {
-   display: none;
-} */
-
 .container-projects {
    margin: 128px auto;
 }
@@ -768,6 +763,144 @@
 }
 
 /*</CONTAINER-BLOG>---------------------------------------------------*/
+/*<CONTACT>---------------------------------------------------*/
+
+.container-contact {
+   font-family: Poppins;
+   background-color: rgba(28, 30, 83, 1);
+   padding: 96px 0px 0px 0px;
+
+   .contact-content {
+      display: grid;
+      grid-template-columns: minmax(auto, 517px) 1fr;
+      grid-template-rows: 1fr 95px;
+      column-gap: 142px;
+
+      .contact-main {
+         .contact-logo {
+            margin: 0px 0px 22px 0px;
+         }
+
+         .contact-text {
+            max-width: 399px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            color: rgba(255, 255, 255, 0.8);
+         }
+      }
+
+      .contact-social {
+         .social-title {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 64px;
+            color: rgba(255, 255, 255, 1);
+            margin: 0px 0px 14px 0px;
+         }
+
+         .social-text {
+            max-width: 399px;
+            font-size: 16px;
+            line-height: 28px;
+            color: rgba(244, 246, 252, 0.8);
+            margin: 0px 0px 28px 0px;
+         }
+
+         .social-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 144px;
+         }
+      }
+
+      .contact-links {
+         background-color: rgba(252, 217, 128, 1);
+         display: grid;
+         grid-template-columns: minmax(auto, 218px) 1fr;
+         column-gap: 29px;
+         align-content: center;
+         justify-items: end;
+
+         .contact-email {
+            .email-label {
+               font-size: 18px;
+               font-weight: 500;
+               line-height: 32px;
+               color: rgba(40, 41, 56, 1);
+               margin: 0px 0px 1px 0px;
+            }
+
+            .email-link {
+               font-size: 16px;
+               line-height: 28px;
+               color: rgba(40, 41, 56, 0.8);
+            }
+         }
+
+         .contact-phone {
+            justify-self: start;
+
+            .phone-label {
+               font-size: 18px;
+               font-weight: 500;
+               line-height: 32px;
+               color: rgba(40, 41, 56, 1);
+               margin: 0px 0px 1px 0px;
+            }
+
+            .phone-link {
+               font-size: 16px;
+               line-height: 28px;
+               color: rgba(40, 41, 56, 0.8);
+            }
+         }
+      }
+   }
+}
+
+/*</CONTACT>---------------------------------------------------*/
+/*<FOOTER>---------------------------------------------------*/
+
+.footer {
+   padding: 32px 0px;
+
+   .footer-content {
+      font-family: Poppins;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .footer-copyright {
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 28px;
+         color: rgba(40, 41, 56, 1);
+      }
+
+      .footer-links {
+         max-width: 473px;
+         width: 100%;
+
+         ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+               a {
+                  font-size: 16px;
+                  font-weight: 500;
+                  line-height: 28px;
+                  color: rgba(40, 41, 56, 1);
+               }
+            }
+         }
+      }
+   }
+}
+
+/*</FOOTER>---------------------------------------------------*/
 /*<MEDIA>---------------------------------------------------*/
 @media screen and (max-width: 1300px) {
    .center {

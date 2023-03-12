@@ -11,8 +11,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+   <link rel="stylesheet" href="./css/owl.carousel.min.css">
+   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
    <link rel="stylesheet" href="./css/reset.css">
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
@@ -176,25 +178,69 @@
                <h3>What our clients say about us</h3>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
             </div>
-            <div class="slider animate__animated wow animate__fadeInRight">
-               <p class="descr">
-                  "The best agency we’ve worked with so far. They understand our product and are able to add new
-                  features with a great focus."
-               </p>
-               <div class="author">
-                  <img src="./images/container-comments/author.png" alt="author">
-                  <div class="info">
-                     <p class="name">Jenny Wilson</p>
-                     <p class="more-info">Vice President</p>
+            <div class="owl-carousel owl-theme animate__animated wow animate__fadeInRight">
+               <div class="slider item">
+                  <p class="descr">
+                     "The best agency we’ve worked with so far. They understand our product and are able to add new
+                     features with a great focus."
+                  </p>
+                  <div class="author">
+                     <img src="./images/container-comments/author.png" alt="author">
+                     <div class="info">
+                        <p class="name">Jenny Wilson</p>
+                        <p class="more-info">Vice President</p>
+                     </div>
                   </div>
+                  <!-- <div class="btns">
+                     <span class="left-btn">
+                        <img src="./images/container-comments/left-arrow.svg" alt="left-arrow">
+                     </span>
+                     <span class="right-btn">
+                        <img src="./images/container-comments/right-arrow.svg" alt="right-arrow">
+                     </span>
+                  </div> -->
                </div>
-               <div class="btns">
-                  <span class="left-btn">
-                     <img src="./images/container-comments/left-arrow.svg" alt="left-arrow">
-                  </span>
-                  <span class="right-btn">
-                     <img src="./images/container-comments/right-arrow.svg" alt="right-arrow">
-                  </span>
+               <div class="slider item">
+                  <p class="descr">
+                     "The best agency we’ve worked with so far. They understand our product and are able to add new
+                     features with a great focus."
+                  </p>
+                  <div class="author">
+                     <img src="./images/container-comments/author.png" alt="author">
+                     <div class="info">
+                        <p class="name">Jenny Wilson</p>
+                        <p class="more-info">Vice President</p>
+                     </div>
+                  </div>
+                  <!-- <div class="btns">
+                     <span class="left-btn">
+                        <img src="./images/container-comments/left-arrow.svg" alt="left-arrow">
+                     </span>
+                     <span class="right-btn">
+                        <img src="./images/container-comments/right-arrow.svg" alt="right-arrow">
+                     </span>
+                  </div> -->
+               </div>
+               <div class="slider item">
+                  <p class="descr">
+                     "The best agency we’ve worked with so far. They understand our product and are able to add new
+                     features with a great focus."
+                  </p>
+                  <div class="author">
+                     <img src="./images/container-comments/author.png" alt="author">
+                     <div class="info">
+                        <p class="name">Jenny Wilson</p>
+                        <p class="more-info">Vice President</p>
+                     </div>
+                  </div>
+                  <!-- <div class="btns">
+                     <span class="left-btn">
+                        <img src="./images/container-comments/left-arrow.svg" alt="left-arrow">
+                     </span>
+                     <span class="right-btn">
+                        <img src="./images/container-comments/right-arrow.svg" alt="right-arrow">
+                     </span>
+                  </div> -->
                </div>
             </div>
          </div>
@@ -263,7 +309,80 @@
             </div>
          </div>
       </section>
+      <section class="container-contact">
+         <div class="contact-content center">
+            <div class="contact-main">
+               <div class="contact-logo">
+                  <img src="./images/footer/Logo.svg" alt="logo">
+               </div>
+               <p class="contact-text">
+                  We are always open to discuss your project and improve your online presence.
+               </p>
+            </div>
+            <div class="contact-social">
+               <h4 class="social-title">
+                  Lets Talk!
+               </h4>
+               <p class="social-text">We are always open to discuss your project, improve your online presence and help
+                  with your UX/UI design challenges.</p>
+               <div class="social-items">
+                  <div class="social-item">
+                     <img src="./images/footer/facebook.svg" alt="facebook">
+                  </div>
+                  <div class="social-item">
+                     <img src="./images/footer/twitter.svg" alt="twitter">
+                  </div>
+                  <div class="social-item">
+                     <img src="./images/footer/instagram.svg" alt="instagram">
+                  </div>
+                  <div class="social-item">
+                     <img src="./images/footer/linkedin.svg" alt="linkedin">
+                  </div>
+               </div>
+            </div>
+            <div class="contact-links">
+               <div class="contact-email">
+                  <h5 class="email-label">Email me at</h5>
+                  <a href="mailto:contact@website.com" class="email-link">contact@website.com</a>
+               </div>
+               <div class="contact-phone">
+                  <h5 class="phone-label">Call us</h5>
+                  <a href="tel:0927627728525" class="phone-link">0927 6277 28525</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="footer-content center">
+            <p class="footer-copyright">Copyright 2022, Finsweet.com</p>
+            <nav class="footer-links">
+               <ul>
+                  <li>
+                     <a href="#" class="footer-link">Home</a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer-link">About us</a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer-link">Features</a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer-link">Pricing</a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer-link">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="#" class="footer-link">Blog</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </footer>
    </div>
+   <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"></script>
+   <script src="./js/owl.carousel.min.js"></script>
    <script src="./js/wow.min.js"></script>
    <script src="./js/script.js"></script>
 </body>

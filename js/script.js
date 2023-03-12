@@ -1,3 +1,15 @@
+$('.owl-carousel').owlCarousel({
+   loop: true,
+   margin: 0,
+   nav: true,
+   dots: false,
+   responsive: {
+      0: {
+         items: 1
+      }
+   }
+})
+
 const wow = new WOW({
    boxClass: 'wow', /* класс, который необходим для работы wow.js */
    animateClass: 'animate__animated', /* класс, который будет автоматически добавляться анимируемым элементам при прокрутке страницы */
