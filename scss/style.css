@@ -816,6 +816,9 @@
   justify-content: space-between;
   max-width: 144px;
 }
+.container-contact .contact-content .contact-social .social-items .social-item {
+  cursor: pointer;
+}
 .container-contact .contact-content .contact-links {
   background-color: rgb(252, 217, 128);
   display: grid;
@@ -869,6 +872,7 @@
   font-weight: 500;
   line-height: 28px;
   color: rgb(40, 41, 56);
+  margin: 0px 20px 0px 0px;
 }
 .footer .footer-content .footer-links {
   max-width: 473px;
@@ -982,6 +986,10 @@
     width: 95%;
     margin: 0 auto;
   }
+  .container-contact .contact-content {
+    -moz-column-gap: 42px;
+         column-gap: 42px;
+  }
 }
 @media screen and (max-width: 900px) {
   .work-content {
@@ -1031,6 +1039,11 @@
   .container-blog .center .blog-items .blog-item img {
     height: 400px;
   }
+  .container-contact .contact-content {
+    grid-template-columns: minmax(auto, 417px) 1fr;
+    -moz-column-gap: 42px;
+         column-gap: 42px;
+  }
 }
 @media screen and (max-width: 768px) {
   .first-container .head-content .left-content h1 {
@@ -1079,6 +1092,19 @@
   .container-website .right-info h4 {
     padding: 56px 0px 16px 0px;
   }
+  .container-contact {
+    padding: 36px 0px 0px 0px;
+  }
+  .container-contact .contact-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 20px;
+  }
+  .container-contact .contact-content .contact-links {
+    padding: 20px 0px;
+  }
 }
 @media screen and (max-width: 600px) {
   .container-projects .head-info {
@@ -1119,6 +1145,26 @@
   }
   .container-blog .center .blog-items .blog-item .blog-content p {
     margin: 0px 0px 20px 0px;
+  }
+  .container-contact .contact-content .contact-links {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    justify-items: start;
+    padding: 20px;
+  }
+  .footer .footer-content {
+    flex-direction: column;
+  }
+  .footer .footer-content .footer-copyright {
+    margin: 0px 0px 20px 0px;
+  }
+  .footer .footer-content .footer-links ul {
+    flex-wrap: wrap;
+  }
+  .footer .footer-content .footer-links ul li {
+    margin: 0px 15px 0px 0px;
   }
 }
 @media screen and (max-width: 500px) {
