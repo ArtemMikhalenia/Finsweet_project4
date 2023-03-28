@@ -1,3 +1,7 @@
+document.querySelector('.burger-menu').onclick = function () {
+   document.querySelector('.menu').classList.toggle('open-menu');
+}
+
 $('.owl-carousel').owlCarousel({
    loop: true,
    margin: 0,
@@ -18,3 +22,24 @@ const wow = new WOW({
    live: true /* если true, то анимация будет работать даже на динамически добавляемых элементах, если false, то только на тех элементах, которые были на странице при ее загрузке */
 })
 wow.init(); /* Инициализация плагина с установленными выше свойствами */
+
+///
+
+// document.querySelector('#plus1').onclick = function () {
+//    document.querySelector('#plus1').classList.toggle('rotate-plus');
+//    document.querySelector('#answer1').classList.toggle('question-show');
+// }
+
+const plusIcons = document.getElementsByClassName('plus');
+const questions = document.getElementsByClassName('question-item');
+
+if (plusIcons.length > 0) {
+   for (let index = 0; index < plusIcons.length; index++) {
+      const plusIcon = plusIcons[index];
+      const question = questions[index];
+      plusIcon.addEventListener("click", function (e) {
+         plusIcon.classList.toggle('rotate-plus');
+         question.classList.toggle('question-show');
+      });
+   }
+}
