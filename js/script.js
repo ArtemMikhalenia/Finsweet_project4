@@ -1,5 +1,6 @@
 document.querySelector('.burger-menu').onclick = function () {
    document.querySelector('.menu').classList.toggle('open-menu');
+   document.querySelector('.burger-menu').classList.toggle('active');
 }
 
 $('.owl-carousel').owlCarousel({
@@ -9,7 +10,7 @@ $('.owl-carousel').owlCarousel({
    dots: false,
    responsive: {
       0: {
-         items: 1
+         items: 1,
       }
    }
 })

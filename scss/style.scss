@@ -477,11 +477,6 @@
    color: rgba(40, 41, 56, 0.7);
 }
 
-.container-comments .box-comments .slider {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-}
-
 .container-comments .box-comments .slider .descr {
    font-size: 32px;
    font-weight: 500;
@@ -538,7 +533,7 @@
 
 .container-comments .box-comments .slider .btns .right-btn,
 .container-comments .box-comments .owl-nav .owl-next {
-   background-color: #5239FA;
+  background-color: #5239FA;
 }
 
 .container-comments .box-comments .owl-nav .owl-next span,
@@ -1183,6 +1178,27 @@ $blueColor: rgba(36, 5, 242, 0.87);
 
    .first-container header .burger-menu {
       display: flex;
+      transition: all 0.5s ease 0s;
+   }
+
+   .first-container header .burger-menu.active span {
+      transition: all 0.5s ease 0s;
+
+      &:first-child {
+         position: relative;
+         transform: rotate(45deg);
+         top: 5px;
+      }
+
+      &:nth-child(2) {
+         display: none;
+      }
+
+      &:last-child {
+         position: relative;
+         transform: rotate(-45deg);
+         bottom: 5px;
+      }
    }
 }
 
@@ -1278,14 +1294,14 @@ $blueColor: rgba(36, 5, 242, 0.87);
 
    .container-comments .box-comments {
       grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 20px;
    }
 
-   .container-comments .box-comments .slider {
-      padding: 30px 0px 0px 0px;
-   }
-
-   .container-comments .box-comments .slider .descr {
-      margin: 0px 0px 15px 0px;
+   .container-comments .box-comments .owl-carousel {
+      width: 95vw;
+      display: flex;
+      flex-direction: column;
    }
 
    .container-projects .projects .second-item .project-info h4 {
